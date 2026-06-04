@@ -1,0 +1,39 @@
+nav_blogs: 博客
+nav_projects: 项目
+nav_about: 关于
+
+hero_title: FSEASY
+hero_subtitle: "记录本真生活\n用心构建产品"
+
+section_blogs: 博客
+section_projects: 开发作品
+section_promo: 推广网站
+
+blog_personal_title: 个人博客
+blog_personal_desc: blog.fseasy.top，记录生活与技术
+blog_personal_url: https://blog.fseasy.top
+
+blog_knowledge_title: 知识
+blog_knowledge_desc: k.fseasy.top，沉淀有价值的内容
+blog_knowledge_url: https://k.fseasy.top
+
+blog_log_title: 日志
+blog_log_desc: log.fseasy.top，记录日常
+blog_log_url: https://log.fseasy.top
+
+project_docgate_title: Docgate
+project_docgate_desc: 静态文档的鉴权解决方案。Supertokens + FastApi + Nginx 
+project_docgate_url: https://github.com/fseasy/docgate
+
+project_imlog_title: ImLog
+project_imlog_desc: 以 IM 形式记录日志。I log, therefore I am.
+project_imlog_url: https://github.com/fseasy/imlog-android
+
+promo_title: 个人推广
+promo_desc: promo.fseasy.top
+promo_url: https://promo.fseasy.top
+
+dajuan_title: 大娟的亲子英语
+dajuan_desc: 帮助父母开口说，让孩子自然习得
+dajuan_url: https://dajuan.fseasy.top
+

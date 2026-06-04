@@ -1,0 +1,129 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <h1 class="hero-title">{{ i18n "hero_title" }}</h1>
+      <div class="hero-bottom">
+        <div class="hero-logo">
+          <img src="{{ .Site.Params.logo }}" alt="{{ .Site.Title }}">
+        </div>
+        <div class="hero-slogan-col">
+          <p class="hero-slogan">{{ i18n "hero_subtitle" }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blogs Section -->
+<section id="blogs" class="section">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "section_blogs" }}</h2>
+    <div class="card-grid">
+      <!-- Personal Blog -->
+      <a href="{{ i18n "blog_personal_url" }}" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 20h9"></path>
+            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+          </svg>
+        </div>
+        <h3>{{ i18n "blog_personal_title" }}</h3>
+        <p>{{ i18n "blog_personal_desc" }}</p>
+      </a>
+
+      <!-- Knowledge Base -->
+      <a href="{{ i18n "blog_knowledge_url" }}" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+          </svg>
+        </div>
+        <h3>{{ i18n "blog_knowledge_title" }}</h3>
+        <p>{{ i18n "blog_knowledge_desc" }}</p>
+      </a>
+
+      <!-- Dev Log -->
+      <a href="{{ i18n "blog_log_url" }}" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+        </div>
+        <h3>{{ i18n "blog_log_title" }}</h3>
+        <p>{{ i18n "blog_log_desc" }}</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "section_projects" }}</h2>
+    <div class="card-grid">
+      <!-- Docgate -->
+      <a href="{{ i18n "project_docgate_url" }}" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+        </div>
+        <h3>{{ i18n "project_docgate_title" }}</h3>
+        <p>{{ i18n "project_docgate_desc" }}</p>
+      </a>
+
+      <!-- IMLog -->
+      <a href="{{ i18n "project_imlog_url" }}" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </div>
+        <h3>{{ i18n "project_imlog_title" }}</h3>
+        <p>{{ i18n "project_imlog_desc" }}</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Promo Section -->
+<section id="promo" class="section">
+  <div class="container">
+    <h2 class="section-title">{{ i18n "section_promo" }}</h2>
+    <div class="card-grid">
+      <!-- Promo Site -->
+      <a href="{{ i18n "promo_url" }}" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+        </div>
+        <h3>{{ i18n "promo_title" }}</h3>
+        <p>{{ i18n "promo_desc" }}</p>
+      </a>
+
+      <!-- Dajuan -->
+      <a href="{{ i18n "dajuan_url" }}" class="card" target="_blank" rel="noopener">
+        <div class="card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+        </div>
+        <h3>{{ i18n "dajuan_title" }}</h3>
+        <p>{{ i18n "dajuan_desc" }}</p>
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}

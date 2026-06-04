@@ -1,0 +1,340 @@
+/* CSS Variables - Orange Theme with Light/Dark Mode */
+:root {
+  --color-primary: #F97316;
+  --color-primary-hover: #EA580C;
+  --color-secondary: #FB923C;
+  --color-accent: #F97316;
+  --color-background: #FAFAF9;
+  --color-surface: #FFFFFF;
+  --color-foreground: #1C1917;
+  --color-foreground-secondary: #57534E;
+  --color-border: #E7E5E4;
+  --color-border-hover: #D6D3D1;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --radius: 0.5rem;
+  --transition: 350ms ease;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --color-background: #2a2a2a;
+    --color-surface: #3a3530;
+    --color-foreground: #FAFAF9;
+    --color-foreground-secondary: #A8A29E;
+    --color-border: #292524;
+    --color-border-hover: #44403C;
+  }
+}
+
+.light {
+  --color-background: #FAFAF9;
+  --color-surface: #FFFFFF;
+  --color-foreground: #1C1917;
+  --color-foreground-secondary: #57534E;
+  --color-border: #E7E5E4;
+  --color-border-hover: #D6D3D1;
+}
+
+/* Reset & Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+main {
+  flex: 1;
+}
+
+/* Header */
+.site-header {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: var(--color-foreground-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.nav a:hover {
+  color: var(--color-primary);
+}
+
+/* Language Selector */
+.lang-selector {
+  display: flex;
+  gap: 0.25rem;
+  background-color: var(--color-background);
+  padding: 0.25rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+}
+
+.lang-selector a {
+  padding: 0.375rem 0.75rem;
+  border: none;
+  background: transparent;
+  color: var(--color-foreground-secondary);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: calc(var(--radius) - 2px);
+  transition: all var(--transition);
+}
+
+.lang-selector a:hover {
+  color: var(--color-foreground);
+}
+
+.lang-selector a.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Hero Section */
+.hero {
+  padding: 5rem 0 3rem 0;
+  background: linear-gradient(to bottom, var(--color-surface), var(--color-background));
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+  letter-spacing: 0.3em;
+}
+
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.hero-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.hero-slogan-col {
+  text-align: left;
+  max-width: 500px;
+}
+
+.hero-slogan {
+  font-size: clamp(1.4rem, 2vw, 2.8rem);
+  color: var(--color-foreground-secondary);
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+/* Section Styles */
+.section {
+  padding: 3rem 0;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--color-foreground);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Card Grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  transition: all var(--transition);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.card-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--color-primary);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: var(--color-foreground-secondary);
+  font-size: 0.9375rem;
+}
+
+/* Footer */
+.site-footer {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  padding: 2rem 0;
+  margin-top: auto;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.footer-inner p {
+  color: var(--color-foreground-secondary);
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-bottom {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-logo img {
+    width: 100px;
+  }
+
+  .hero-slogan-col {
+    text-align: center;
+    max-width: none;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .header-inner {
+    flex-wrap: wrap;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+    margin-top: 1rem;
+  }
+
+  .hero {
+    padding: 2rem 0;
+  }
+
+  .section {
+    padding: 2rem 0;
+  }
+}
+
+/* Accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}

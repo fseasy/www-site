@@ -1,0 +1,38 @@
+nav_blogs: Blogs
+nav_projects: Projects
+nav_about: About
+
+hero_title: FSEASY
+hero_subtitle: "Authentic Living\nBuilding Products with Care"
+
+section_blogs: Blogs
+section_projects: Projects
+section_promo: Promo Sites
+
+blog_personal_title: Personal Blog
+blog_personal_desc: blog.fseasy.top - Life and technology notes
+blog_personal_url: https://blog.fseasy.top
+
+blog_knowledge_title: Knowledge
+blog_knowledge_desc: k.fseasy.top - Curated valuable content
+blog_knowledge_url: https://k.fseasy.top
+
+blog_log_title: Log
+blog_log_desc: log.fseasy.top - Daily logs
+blog_log_url: https://log.fseasy.top
+
+project_docgate_title: Docgate
+project_docgate_desc: "Auth solution for static docs. Supertokens + FastApi + Nginx"
+project_docgate_url: https://github.com/fseasy/docgate
+
+project_imlog_title: ImLog
+project_imlog_desc: "Log like IM. I log, therefore I am."
+project_imlog_url: https://github.com/fseasy/imlog-android
+
+promo_title: Promo Site
+promo_desc: promo.fseasy.top
+promo_url: https://promo.fseasy.top
+
+dajuan_title: Dajuan English
+dajuan_desc: Helping parents speak up, kids naturally acquire
+dajuan_url: https://dajuan.fseasy.top

@@ -1,0 +1,29 @@
+baseURL = 'https://fseasy.top/'
+languageCode = 'zh-cn'
+title = 'fseasy'
+theme = 'fseasy'
+
+defaultContentLanguage = 'zh'
+defaultContentLanguageInSubdir = false
+
+[languages]
+[languages.zh]
+languageName = '中文'
+languageCode = 'zh-CN'
+weight = 1
+title = 'fseasy'
+
+[languages.en]
+languageName = 'English'
+languageCode = 'en-US'
+weight = 2
+title = 'fseasy'
+
+[params]
+description = '记录本真生活，用心构建产品'
+author = 'fseasy'
+logo = '/images/fslogo-gpt-opt-376.webp'
+favicon = '/favicon.ico'
+
+[build]
+writeStats = true

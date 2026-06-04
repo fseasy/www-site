@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="header-inner">
+    <nav class="nav">
+      <a href="#blogs">{{ i18n "nav_blogs" }}</a>
+      <a href="#projects">{{ i18n "nav_projects" }}</a>
+      <a href="#promo">{{ i18n "section_promo" }}</a>
+    </nav>
+
+    <div class="lang-selector">
+      {{ if eq .Site.Language.LanguageCode "zh-CN" }}
+      <a href="/en/" class="">EN</a>
+      {{ else }}
+      <a href="/" class="">中文</a>
+      {{ end }}
+    </div>
+  </div>
+</div>
