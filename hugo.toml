@@ -6,6 +6,8 @@ theme = 'fseasy'
 defaultContentLanguage = 'zh'
 defaultContentLanguageInSubdir = false
 
+enableRobotsTXT = true
+
 [languages]
 [languages.zh]
 languageName = '中文'
